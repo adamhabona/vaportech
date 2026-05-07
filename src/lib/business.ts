@@ -1,0 +1,33 @@
+export const BUSINESS = {
+  name: "VaporTech USA",
+  tagline: "Smoke & Vape Shop",
+  url: "https://vaportechusa.com",
+  streetAddress: "8005 W Sample Rd",
+  city: "Coral Springs",
+  region: "FL",
+  postalCode: "33065",
+  country: "US",
+  telephone: "(754) 241-5367",
+  telephoneIntl: "+1-754-241-5367",
+  telephoneTel: "+17542415367",
+  geo: { lat: 26.2725067, lng: -80.2324204 },
+  hoursLong: [
+    { days: "Monday to Saturday", hours: "10:00 AM to 10:00 PM" },
+    { days: "Sunday", hours: "10:00 AM to 8:00 PM" },
+  ],
+  founded: 2014,
+  sameAs: [
+    "https://www.facebook.com/vaportechusa",
+    "https://www.instagram.com/vaportechusa",
+  ],
+  areaServed: [
+    "Coral Springs",
+    "Parkland",
+    "Deerfield Beach",
+    "Coconut Creek",
+    "Margate",
+    "Tamarac",
+    "Pompano Beach",
+    "Boca Raton",
+  ],
+} as const;

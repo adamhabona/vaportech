@@ -1,0 +1,237 @@
+"use client";
+
+import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
+import { ArrowRight, Globe } from "lucide-react";
+import { InstagramIcon, XIcon } from "@/components/icons/brand-icons";
+
+const HERO_VIDEO_SRC =
+  "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260405_074625_a81f018a-956b-43fb-9aee-4d1508e30e6a.mp4";
+
+function fadeOpacity(
+  el: HTMLElement,
+  from: number,
+  to: number,
+  durationMs: number,
+  done?: () => void,
+) {
+  const start = performance.now();
+  const tick = (now: number) => {
+    const elapsed = now - start;
+    const t = Math.min(1, elapsed / durationMs);
+    const eased = t;
+    const value = from + (to - from) * eased;
+    el.style.opacity = String(value);
+    if (t < 1) {
+      requestAnimationFrame(tick);
+    } else {
+      done?.();
+    }
+  };
+  requestAnimationFrame(tick);
+}
+
+export function Hero() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [email, setEmail] = useState("");
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    let canceled = false;
+    let fadingOut = false;
+
+    const handleCanPlay = () => {
+      if (canceled) return;
+      video.play().catch(() => {});
+      fadeOpacity(video, 0, 1, 500);
+    };
+
+    const handleTimeUpdate = () => {
+      if (canceled || fadingOut) return;
+      const remaining = video.duration - video.currentTime;
+      if (Number.isFinite(remaining) && remaining <= 0.55 && remaining > 0) {
+        fadingOut = true;
+        const current = parseFloat(video.style.opacity || "1");
+        fadeOpacity(video, current, 0, 500);
+      }
+    };
+
+    const handleEnded = () => {
+      if (canceled) return;
+      video.style.opacity = "0";
+      window.setTimeout(() => {
+        if (canceled) return;
+        video.currentTime = 0;
+        video.play().catch(() => {});
+        fadingOut = false;
+        fadeOpacity(video, 0, 1, 500);
+      }, 100);
+    };
+
+    video.addEventListener("canplay", handleCanPlay);
+    video.addEventListener("timeupdate", handleTimeUpdate);
+    video.addEventListener("ended", handleEnded);
+
+    return () => {
+      canceled = true;
+      video.removeEventListener("canplay", handleCanPlay);
+      video.removeEventListener("timeupdate", handleTimeUpdate);
+      video.removeEventListener("ended", handleEnded);
+    };
+  }, []);
+
+  return (
+    <section className="relative min-h-screen overflow-hidden flex flex-col">
+      <video
+        ref={videoRef}
+        muted
+        autoPlay
+        playsInline
+        preload="auto"
+        className="absolute inset-0 w-full h-full object-cover object-bottom z-0"
+        style={{ opacity: 0 }}
+      >
+        <source src={HERO_VIDEO_SRC} type="video/mp4" />
+      </video>
+
+      <div className="absolute inset-0 z-[1] bg-gradient-to-b from-black/30 via-black/10 to-black/60 pointer-events-none" />
+
+      <nav className="relative z-20 px-6 py-6">
+        <div className="liquid-glass rounded-full max-w-5xl mx-auto px-6 py-3 flex items-center justify-between">
+          <div className="flex items-center gap-8">
+            <Link
+              href="/"
+              className="flex items-center gap-2 text-white"
+              aria-label="VaporTech USA home"
+            >
+              <Globe size={20} className="text-white" />
+              <span className="font-serif-display text-lg tracking-tight">
+                VaporTech
+              </span>
+            </Link>
+            <ul className="hidden md:flex items-center gap-8 text-sm font-medium">
+              <li>
+                <Link
+                  href="/brands"
+                  className="text-white/80 hover:text-white transition-colors"
+                >
+                  Brands
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/locations"
+                  className="text-white/80 hover:text-white transition-colors"
+                >
+                  Locations
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/shop"
+                  className="text-white/80 hover:text-white transition-colors"
+                >
+                  Shop
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/blog"
+                  className="text-white/80 hover:text-white transition-colors"
+                >
+                  Blog
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="flex items-center gap-3">
+            <Link
+              href="/contact"
+              className="hidden sm:inline-block text-white text-sm font-medium hover:text-white/80 transition-colors"
+            >
+              Directions
+            </Link>
+            <Link
+              href="/contact"
+              className="liquid-glass rounded-full px-5 py-2 text-white text-sm font-medium hover:bg-white/5 transition-colors"
+            >
+              Visit Store
+            </Link>
+          </div>
+        </div>
+      </nav>
+
+      <div className="relative z-10 flex-1 flex flex-col items-center justify-center px-6 py-12 text-center -translate-y-[8%]">
+        <h1 className="font-serif-display text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white tracking-tight whitespace-nowrap leading-[1]">
+          Find it <em className="italic text-white/90">all</em>.
+        </h1>
+
+        <p className="mt-8 text-white/70 text-base md:text-lg leading-relaxed max-w-xl px-4">
+          Coral Springs&apos; premier smoke and vape destination since 2014.
+          Every major brand, in stock, in person.
+        </p>
+
+        <form
+          onSubmit={(e) => e.preventDefault()}
+          className="mt-10 max-w-xl w-full"
+        >
+          <div className="liquid-glass rounded-full pl-6 pr-2 py-2 flex items-center gap-3">
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Get new drops in your inbox"
+              className="flex-1 bg-transparent outline-none text-white placeholder:text-white/40 text-sm py-2"
+            />
+            <button
+              type="submit"
+              aria-label="Subscribe"
+              className="bg-white rounded-full p-3 text-black hover:bg-white/90 transition-colors"
+            >
+              <ArrowRight size={20} />
+            </button>
+          </div>
+        </form>
+
+        <Link
+          href="/about"
+          className="mt-8 liquid-glass rounded-full px-8 py-3 text-white text-sm font-medium hover:bg-white/5 transition-colors"
+        >
+          Read the story
+        </Link>
+      </div>
+
+      <div className="relative z-10 flex justify-center gap-4 pb-12">
+        <a
+          href="https://www.instagram.com/vaportechusa"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+          className="liquid-glass rounded-full p-4 text-white/80 hover:text-white hover:bg-white/5 transition-all"
+        >
+          <InstagramIcon width={20} height={20} />
+        </a>
+        <a
+          href="https://x.com/vaportechusa"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="X (Twitter)"
+          className="liquid-glass rounded-full p-4 text-white/80 hover:text-white hover:bg-white/5 transition-all"
+        >
+          <XIcon width={20} height={20} />
+        </a>
+        <a
+          href="https://www.google.com/maps/place/?q=8005+W+Sample+Rd,+Coral+Springs,+FL+33065"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Map and directions"
+          className="liquid-glass rounded-full p-4 text-white/80 hover:text-white hover:bg-white/5 transition-all"
+        >
+          <Globe size={20} />
+        </a>
+      </div>
+    </section>
+  );
+}
