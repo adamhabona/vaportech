@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { ArrowRight, Globe } from "lucide-react";
+import { Navbar } from "@/components/layout/navbar";
 import { InstagramIcon, XIcon } from "@/components/icons/brand-icons";
 
 const HERO_VIDEO_SRC =
@@ -98,70 +99,7 @@ export function Hero() {
 
       <div className="absolute inset-0 z-[1] bg-gradient-to-b from-black/30 via-black/10 to-black/60 pointer-events-none" />
 
-      <nav className="relative z-20 px-6 py-6">
-        <div className="liquid-glass rounded-full max-w-5xl mx-auto px-6 py-3 flex items-center justify-between">
-          <div className="flex items-center gap-8">
-            <Link
-              href="/"
-              className="flex items-center gap-2 text-white"
-              aria-label="VaporTech USA home"
-            >
-              <Globe size={20} className="text-white" />
-              <span className="font-serif-display text-lg tracking-tight">
-                VaporTech
-              </span>
-            </Link>
-            <ul className="hidden md:flex items-center gap-8 text-sm font-medium">
-              <li>
-                <Link
-                  href="/brands"
-                  className="text-white/80 hover:text-white transition-colors"
-                >
-                  Brands
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/locations"
-                  className="text-white/80 hover:text-white transition-colors"
-                >
-                  Locations
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/shop"
-                  className="text-white/80 hover:text-white transition-colors"
-                >
-                  Shop
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/blog"
-                  className="text-white/80 hover:text-white transition-colors"
-                >
-                  Blog
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="flex items-center gap-3">
-            <Link
-              href="/contact"
-              className="hidden sm:inline-block text-white text-sm font-medium hover:text-white/80 transition-colors"
-            >
-              Directions
-            </Link>
-            <Link
-              href="/contact"
-              className="liquid-glass rounded-full px-5 py-2 text-white text-sm font-medium hover:bg-white/5 transition-colors"
-            >
-              Visit Store
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <Navbar />
 
       <div className="relative z-10 flex-1 flex flex-col items-center justify-center px-6 py-12 text-center -translate-y-[8%]">
         <h1 className="font-serif-display text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white tracking-tight whitespace-nowrap leading-[1]">
