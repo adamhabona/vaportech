@@ -31,7 +31,9 @@ export const REVIEW_EXCERPTS: ReviewExcerpt[] = [
     author: "Marvin Bennedict",
   },
   {
-    quote: "This place is good and very friendly people too.",
+    quote:
+      "This place is good and very friendly people too... keep doing the good job guys.",
+    author: "Levens Nicolas",
   },
   {
     quote:
