@@ -20,10 +20,6 @@ export interface ReviewExcerpt {
 export const REVIEW_EXCERPTS: ReviewExcerpt[] = [
   {
     quote:
-      "My favorite spot for THCA products. Sophia and Adam are super kind and welcoming.",
-  },
-  {
-    quote:
       "Amazing store. Amazing service. Great prices and they have all that you need.",
   },
   {
