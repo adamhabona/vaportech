@@ -11,7 +11,17 @@ export const BRANDS: Brand[] = [
       "Raz emerged in the disposable wave when most brands prioritized puff count over flavor accuracy. Their formulation team tuned each release for clean fruit and beverage profiles that don't muddy as the device runs down, which is why Raz holds shelf space at premium retailers across South Florida.",
     distinct:
       "Where most large-format disposables lose flavor in the last quarter of the device, Raz holds taste through the final puff. The mesh coil construction is more consistent than most peers, and their flavor library leans toward cleaner fruit profiles instead of overly synthetic candy.",
+    photos: [
+      {
+        src: "/brands/raz-vue-display.jpg",
+        alt: "Raz Vue disposable vapes stacked on the counter at VaporTech USA in Coral Springs, in Triple Berry Lime, Strawberry Blast, White Gummy, Sour Apple Ice, Polar Ice and other flavors",
+        width: 1206,
+        height: 1435,
+        caption: "The new Raz Vue, in stock at our Coral Springs counter.",
+      },
+    ],
     productHighlights: [
+      "Raz Vue (50K normal mode, 25K boost mode, visible e-liquid)",
       "Raz CA6000 (6000 puff)",
       "Raz TN9000 (9000 puff)",
       "Raz DC25000 disposable with screen",
@@ -26,7 +36,7 @@ export const BRANDS: Brand[] = [
       {
         question: "Which Raz model lasts the longest?",
         answer:
-          "The Raz DC25000 carries the highest puff count we stock, with a digital screen showing battery and e-liquid level. The TN9000 sits in the middle, and the CA6000 is the most affordable entry.",
+          "The Raz Vue carries the highest puff count we stock, rated at 50K in normal mode and 25K in boost mode, with a window showing the e-liquid level. The DC25000 and TN9000 sit in the middle, and the CA6000 is the most affordable entry.",
       },
       {
         question: "Do you keep Raz in stock?",

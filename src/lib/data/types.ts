@@ -28,6 +28,15 @@ export type BrandCategory =
   | "glass"
   | "cbd";
 
+export interface BrandPhoto {
+  /** Path under /public. */
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  caption?: string;
+}
+
 export interface Brand {
   slug: string;
   name: string;
@@ -36,6 +45,8 @@ export interface Brand {
   history: string;
   distinct: string;
   productHighlights: string[];
+  /** Photos taken in the store, shown on the brand page. */
+  photos?: BrandPhoto[];
   faqs: Faq[];
   relatedBrandSlugs: string[];
   relatedCategorySlugs: string[];
