@@ -65,7 +65,7 @@ export default function AboutPage() {
             </h2>
             <p className="mt-4 text-white/70 text-base md:text-lg leading-relaxed">
               The smoke and vape category has a counterfeit problem. Online
-              marketplaces are flooded with fake Raz, Elf Bar, Lost Mary, and
+              marketplaces are flooded with fake Raz, Lost Mary, and
               Geek Bar disposables. Some hemp-derivative brands cut corners on
               lab testing or label inaccurately. Buying from authorized retail
               is the only consistent way to avoid these risks, and that's
