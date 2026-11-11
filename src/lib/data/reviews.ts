@@ -34,6 +34,8 @@ export const REVIEW_EXCERPTS: ReviewExcerpt[] = [
     quote: "This place is good and very friendly people too.",
   },
   {
-    quote: "Super kind to the customers and service, my go to place for sure.",
+    quote:
+      "Wonderful place and experience! Super kind to the customers and service, my go to place for sure.",
+    author: "Rick Astley",
   },
 ];
