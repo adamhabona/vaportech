@@ -44,7 +44,7 @@ export const BRANDS: Brand[] = [
           "Daily restocks. Specific flavors move quickly, but we rotate inventory throughout the week and our staff can tell you exactly what arrived and what's about to.",
       },
     ],
-    relatedBrandSlugs: ["lost-mary", "geek-bar", "elf-bar"],
+    relatedBrandSlugs: ["lost-mary", "geek-bar", "yovo"],
     relatedCategorySlugs: ["disposable-vapes", "e-liquid"],
   },
   {
@@ -54,7 +54,7 @@ export const BRANDS: Brand[] = [
     intro:
       "Lost Mary is the disposable that introduced a generation to mesh coil flavor accuracy at scale, and the OS5000 remains one of the most reliable devices on our floor.",
     history:
-      "Born from the same engineering tradition as Elf Bar, Lost Mary differentiated itself with rounded ergonomics and a flavor library that leaned toward dessert and beverage profiles. The brand expanded fast across Europe and the United States and became a default reference point for the modern disposable category.",
+      "Lost Mary differentiated itself early with rounded ergonomics and a flavor library that leaned toward dessert and beverage profiles. The brand expanded fast across Europe and the United States and became a default reference point for the modern disposable category.",
     distinct:
       "The OS5000's housing fits the hand more naturally than most peers, and the flavor cycle is engineered to taper smoothly rather than fall off a cliff. Lost Mary also keeps a wider menthol and ice-forward selection than most disposable brands.",
     productHighlights: [
@@ -80,7 +80,7 @@ export const BRANDS: Brand[] = [
           "We restock from authorized distribution weekly and add new flavor releases as soon as they ship. Our Instagram lists current arrivals.",
       },
     ],
-    relatedBrandSlugs: ["raz", "elf-bar", "geek-bar"],
+    relatedBrandSlugs: ["raz", "yovo", "geek-bar"],
     relatedCategorySlugs: ["disposable-vapes"],
   },
   {
@@ -120,39 +120,82 @@ export const BRANDS: Brand[] = [
     relatedCategorySlugs: ["disposable-vapes"],
   },
   {
-    slug: "elf-bar",
-    name: "Elf Bar",
+    slug: "yovo",
+    name: "Yovo",
     category: "disposable",
     intro:
-      "Elf Bar is one of the most recognized disposable names globally, and the BC5000 helped define the modern high-capacity disposable.",
+      "Yovo is one of the newest names on our disposable wall. The JB 50000 pairs a see-through flavor pod with a compact rechargeable battery, and we keep more than 30 flavors available, all in stock.",
     history:
-      "Elf Bar scaled the disposable format with the BC5000, which brought 5000 puffs and rechargeability into mainstream pricing. The brand expanded to the BC10000 and other higher-capacity formats while maintaining the flavor library that built its reputation.",
+      "Yovo started with compact rechargeable disposables like the JB 8000 and moved up through higher-capacity releases including the Rama 16000, Ultra 18000, and Starwalk 40K. The JB 50000 is the current flagship: a two-piece design where the flavor pod and the battery come apart, so the device is built around swapping flavors.",
     distinct:
-      "Elf Bar's flavor consistency at scale is what separates it from cheaper imitators. The BC5000 has been counterfeited extensively, which is why authorized retailer purchase matters more for this brand than almost any other.",
+      "The JB 50000 is a mix and match system. The pod is rated at 50K puffs, runs a dual mesh coil, and has a clear window so you can see how much e-liquid is left. The 600mAh rechargeable battery is small enough for a pocket, and both airflow and wattage are adjustable, which is rare at this size.",
+    photos: [
+      {
+        src: "/brands/yovo-jb50000-display.jpg",
+        alt: "Yovo JB 50000 display on the counter at VaporTech USA in Coral Springs, with boxes of Triple Berry, Orange Ice, Mystic Berry Storm and Crimson Chill",
+        width: 1200,
+        height: 1600,
+        caption:
+          "Yovo JB 50000 at our Coral Springs counter. More than 30 flavors available, all in stock.",
+      },
+    ],
+    flavors: [
+      "Berry Bliss",
+      "Blue Rancher",
+      "Blue Razz Ice",
+      "Blueberry Watermelon",
+      "Cherry Bomb",
+      "Coffee",
+      "Cola Slush",
+      "Cool Mint",
+      "Crimson Chill",
+      "Dragon Fruit Lemonade",
+      "Grape Slush",
+      "Gummy Bear",
+      "Hawaiian Punch",
+      "Juicy Peach Ice",
+      "Kiwi Dragon Berry",
+      "Meta Moon",
+      "Mexican Mango",
+      "Miami Mint",
+      "Mystic Berry Storm",
+      "Orange Ice",
+      "Orange Slush",
+      "Pink Lemonade",
+      "Raspberry Watermelon",
+      "Sour Apple Ice",
+      "Sour Strawberry",
+      "Strawberry Banana",
+      "Strawberry Cupcake",
+      "Strawberry Ice",
+      "Triple Berry",
+      "White Gummy",
+    ],
     productHighlights: [
-      "Elf Bar BC5000",
-      "Elf Bar BC10000",
-      "Elf Bar Lost Mary line collaborations",
-      "Library spans fruit, mint, dessert, beverage",
+      "Yovo JB 50000 (50K puff pod system)",
+      "More than 30 flavors available, all in stock",
+      "Dual mesh coil with visible e-liquid pod",
+      "600mAh rechargeable battery, adjustable airflow and wattage",
+      "Exclusive flavors: Mystic Berry Storm and Crimson Chill",
     ],
     faqs: [
       {
-        question: "How do I tell if my Elf Bar is real?",
+        question: "How many Yovo flavors do you carry?",
         answer:
-          "Most authentic Elf Bars have a scratch-off authentication code on the box. Buy only from authorized retailers. Counterfeit Elf Bars are extremely common online.",
+          "More than 30, and all of them are in stock at our Coral Springs store. The lineup runs from fruit and ice flavors like Blue Razz Ice, Juicy Peach Ice, and Raspberry Watermelon to Cool Mint, Coffee, and Strawberry Cupcake, plus exclusive flavors like Mystic Berry Storm and Crimson Chill. The full list is on this page.",
       },
       {
-        question: "What flavors do you carry?",
+        question: "How does the Yovo JB 50000 work?",
         answer:
-          "Our shelf rotates Watermelon Ice, Blue Razz Ice, Strawberry Mango, Cranberry Grape, and the rest of the BC5000 lineup as available. Specific flavors restock weekly.",
+          "It comes in two parts: a flavor pod and a rechargeable battery. The pod is rated at 50K puffs with a dual mesh coil and a clear window for the e-liquid level. The 600mAh battery recharges and lets you adjust airflow and wattage.",
       },
       {
-        question: "Is the BC10000 better than the BC5000?",
+        question: "Can I change flavors on a Yovo?",
         answer:
-          "It depends on your use. The BC10000 lasts longer and includes a screen, but the BC5000 is more pocketable. Both deliver the same flavor accuracy.",
+          "Yes. The JB 50000 is designed to mix and match, so you can pair the battery with a different flavor pod. Ask our staff to show you how the pieces fit together.",
       },
     ],
-    relatedBrandSlugs: ["lost-mary", "geek-bar", "funky-republic"],
+    relatedBrandSlugs: ["raz", "geek-bar", "lost-mary"],
     relatedCategorySlugs: ["disposable-vapes"],
   },
   {
@@ -160,11 +203,11 @@ export const BRANDS: Brand[] = [
     name: "Funky Republic",
     category: "disposable",
     intro:
-      "Funky Republic by Elf Bar pushes the format toward higher puff counts and more vibrant flavor profiles. The Ti7000 is one of the strongest sellers in our store.",
+      "Funky Republic pushes the format toward higher puff counts and more vibrant flavor profiles. The Ti7000 is one of the strongest sellers in our store.",
     history:
-      "Spun out of Elf Bar engineering, Funky Republic launched with a focus on high-capacity disposables and a bolder flavor library. The Ti7000 became a fast favorite for users who wanted a longer-lasting device without stepping up to mod gear.",
+      "Funky Republic launched with a focus on high-capacity disposables and a bolder flavor library. The Ti7000 became a fast favorite for users who wanted a longer-lasting device without stepping up to mod gear.",
     distinct:
-      "The Ti7000 features a smart display showing battery and e-liquid level, plus a slightly tighter draw than the Elf Bar BC line. Flavor profiles lean more vibrant and tropical, which appeals to summer-heavy markets like South Florida.",
+      "The Ti7000 features a smart display showing battery and e-liquid level, plus a slightly tighter draw than most disposables in its class. Flavor profiles lean more vibrant and tropical, which appeals to summer-heavy markets like South Florida.",
     productHighlights: [
       "Funky Republic Ti7000",
       "Funky Lands Vi15000 collaboration",
@@ -172,9 +215,9 @@ export const BRANDS: Brand[] = [
     ],
     faqs: [
       {
-        question: "What's the difference between Funky Republic and Elf Bar?",
+        question: "What makes Funky Republic different?",
         answer:
-          "Same engineering tradition, different flavor philosophy. Funky Republic leans bolder and more tropical. Elf Bar's library is more balanced across profiles.",
+          "A bolder flavor philosophy. Funky Republic leans more vibrant and tropical than most of the disposable wall, and the Ti7000 adds a smart display for battery and e-liquid level.",
       },
       {
         question: "Does the Ti7000 have a screen?",
@@ -187,7 +230,7 @@ export const BRANDS: Brand[] = [
           "Tropical Rainbow Blast and Raz Ice are our top sellers. Specific availability rotates weekly.",
       },
     ],
-    relatedBrandSlugs: ["elf-bar", "lost-mary", "raz"],
+    relatedBrandSlugs: ["yovo", "lost-mary", "raz"],
     relatedCategorySlugs: ["disposable-vapes"],
   },
   {

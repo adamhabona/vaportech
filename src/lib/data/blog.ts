@@ -73,11 +73,11 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         heading: "Counterfeit risk by brand",
-        body: "Elf Bar BC5000 and Raz are the most counterfeited disposables in the US right now. Lost Mary and Geek Bar see meaningful counterfeiting but less. Lower-tier brands like Mr. Fog and Hyde are less faked because the price-to-effort ratio doesn't work for counterfeiters. Buying from authorized retail eliminates the risk entirely.",
+        body: "Raz is among the most counterfeited disposables in the US right now. Lost Mary and Geek Bar see meaningful counterfeiting but less. Lower-tier brands like Mr. Fog and Hyde are less faked because the price-to-effort ratio doesn't work for counterfeiters. Buying from authorized retail eliminates the risk entirely.",
       },
       {
         heading: "Specific flavor recommendations",
-        body: "If you want clean fruit, Raz Polar Ice or Lost Mary Blue Razz Ice. If you want dessert, Geek Bar Pulse Strawberry Mango or Funky Republic Tropical Rainbow Blast. If you want menthol, Lost Mary Watermelon Ice or Elf Bar Cool Mint. Tell our staff what you've liked and they'll point you to the closest profile.",
+        body: "If you want clean fruit, Raz Polar Ice or Lost Mary Blue Razz Ice. If you want dessert, Geek Bar Pulse Strawberry Mango or Funky Republic Tropical Rainbow Blast. If you want menthol, Lost Mary Watermelon Ice. Tell our staff what you've liked and they'll point you to the closest profile.",
       },
       {
         heading: "What to avoid",
@@ -217,7 +217,7 @@ export const BLOG_POSTS: BlogPost[] = [
     sections: [
       {
         heading: "Counterfeits are the silent cost of online vape buying",
-        body: "Most online vape sellers source from secondary distributors with limited authenticity verification. Marketplaces like Amazon, eBay, and unverified Shopify stores are flooded with counterfeit Raz, Elf Bar, Lost Mary, and Geek Bar devices. Even legitimate-looking sites sometimes mix authentic and counterfeit stock. The difference shows up in flavor and battery life immediately.",
+        body: "Most online vape sellers source from secondary distributors with limited authenticity verification. Marketplaces like Amazon, eBay, and unverified Shopify stores are flooded with counterfeit Raz, Lost Mary, and Geek Bar devices. Even legitimate-looking sites sometimes mix authentic and counterfeit stock. The difference shows up in flavor and battery life immediately.",
       },
       {
         heading: "Freshness on hemp-derived products",
@@ -266,7 +266,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         heading: "5. Funky Republic Ti7000",
-        body: "Tropical Rainbow Blast leads. Bold flavor profiles and a tighter draw than the Elf Bar BC line.",
+        body: "Tropical Rainbow Blast leads. Bold flavor profiles and a tighter draw than most of the category.",
       },
       {
         heading: "6. Lost Mary MO5000",
@@ -277,8 +277,8 @@ export const BLOG_POSTS: BlogPost[] = [
         body: "Animated display, 25000 puff capacity. The choice for users who want maximum capacity and premium build.",
       },
       {
-        heading: "8. Elf Bar BC5000",
-        body: "Steady demand, especially in menthol and ice profiles. Strong value at the established mid-tier price.",
+        heading: "8. Yovo JB 50000",
+        body: "Pod and battery design rated at 50K puffs, with adjustable airflow and wattage. More than 30 flavors available, all in stock.",
       },
       {
         heading: "9. Mr. Fog Switch",

@@ -47,7 +47,7 @@ export const LOCATIONS: Location[] = [
       {
         question: "Do you carry the same brands across categories?",
         answer:
-          "Yes. We stock Raz, Lost Mary, Geek Bar, Elf Bar, and the rest of the disposable lineup; Mellow Fellow, Cake, Delta Extrax, and the major hemp-derived brands; plus glass, hookah, kratom, and CBD lines from our regular vendors.",
+          "Yes. We stock Raz, Lost Mary, Geek Bar, Yovo, and the rest of the disposable lineup; Mellow Fellow, Cake, Delta Extrax, and the major hemp-derived brands; plus glass, hookah, kratom, and CBD lines from our regular vendors.",
       },
     ],
     topBrandSlugs: ["raz", "lost-mary", "geek-bar", "cake", "3chi"],

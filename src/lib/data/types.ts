@@ -45,6 +45,8 @@ export interface Brand {
   history: string;
   distinct: string;
   productHighlights: string[];
+  /** Flavors the store carries, shown as a list on the brand page. */
+  flavors?: string[];
   /** Photos taken in the store, shown on the brand page. */
   photos?: BrandPhoto[];
   faqs: Faq[];
