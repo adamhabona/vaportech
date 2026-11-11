@@ -6,7 +6,7 @@ export function LocalBusinessSchema() {
     "@type": "TobaccoShop",
     "@id": `${BUSINESS.url}/#localbusiness`,
     name: BUSINESS.name,
-    image: `${BUSINESS.url}/og-storefront.jpg`,
+    image: `${BUSINESS.url}${BUSINESS.socialImagePath}`,
     url: BUSINESS.url,
     telephone: BUSINESS.telephoneIntl,
     priceRange: "$$",

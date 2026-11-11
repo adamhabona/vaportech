@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { LazyVideo } from "@/components/ui/lazy-video";
 
 const PHILOSOPHY_VIDEO_SRC =
   "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260307_083826_e938b29f-a43a-41ec-a153-3d4730578ab8.mp4";
@@ -27,16 +28,10 @@ export function PhilosophySection() {
             transition={{ duration: 0.8 }}
             className="rounded-3xl overflow-hidden aspect-[4/3]"
           >
-            <video
-              muted
-              autoPlay
-              loop
-              playsInline
-              preload="auto"
+            <LazyVideo
+              src={PHILOSOPHY_VIDEO_SRC}
               className="w-full h-full object-cover"
-            >
-              <source src={PHILOSOPHY_VIDEO_SRC} type="video/mp4" />
-            </video>
+            />
           </motion.div>
 
           <motion.div
@@ -65,8 +60,8 @@ export function PhilosophySection() {
               </div>
               <p className="text-white/70 text-base md:text-lg leading-relaxed">
                 Skip shipping delays and counterfeit risk. Every product is
-                authenticated in store, every staff member can tell you what
-                hits hardest, and you walk out the door with the real thing
+                authenticated in store, every staff member can help you find
+                the right fit, and you walk out the door with the real thing
                 today.
               </p>
             </div>

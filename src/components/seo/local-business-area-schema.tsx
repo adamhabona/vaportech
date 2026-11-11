@@ -6,7 +6,7 @@ export function LocalBusinessAreaSchema({ city }: { city: string }) {
     "@type": "TobaccoShop",
     "@id": `${BUSINESS.url}/locations/${city.toLowerCase().replace(/\s+/g, "-")}#localbusiness`,
     name: BUSINESS.name,
-    image: `${BUSINESS.url}/og-storefront.jpg`,
+    image: `${BUSINESS.url}${BUSINESS.socialImagePath}`,
     url: `${BUSINESS.url}/locations/${city.toLowerCase().replace(/\s+/g, "-")}`,
     telephone: BUSINESS.telephoneIntl,
     address: {

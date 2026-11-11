@@ -27,10 +27,10 @@ export function ArticleSchema({ article }: { article: ArticleSchemaInput }) {
       name: BUSINESS.name,
       logo: {
         "@type": "ImageObject",
-        url: `${BUSINESS.url}/og-storefront.jpg`,
+        url: `${BUSINESS.url}${BUSINESS.socialImagePath}`,
       },
     },
-    image: article.image ?? `${BUSINESS.url}/og-storefront.jpg`,
+    image: article.image ?? `${BUSINESS.url}${BUSINESS.socialImagePath}`,
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `${BUSINESS.url}/blog/${article.slug}`,

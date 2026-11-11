@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Instrument_Serif, Inter } from "next/font/google";
 import { Footer } from "@/components/layout/footer";
+import { AgeGate } from "@/components/ui/age-gate";
+import { BUSINESS } from "@/lib/business";
 import { LocalBusinessSchema } from "@/components/seo/local-business-schema";
 import "./globals.css";
 
@@ -19,9 +21,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://vaportechusa.com"),
+  metadataBase: new URL(BUSINESS.url),
   title: {
-    default: "Coral Springs' #1 Smoke & Vape Shop | VaporTech USA",
+    default: "Smoke & Vape Shop in Coral Springs, FL | VaporTech USA",
     template: "%s | VaporTech USA",
   },
   description:
@@ -38,12 +40,19 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Coral Springs' #1 Smoke & Vape Shop | VaporTech USA",
+    title: "Smoke & Vape Shop in Coral Springs, FL | VaporTech USA",
     description:
       "Every major brand in stock at 8005 W Sample Rd, Coral Springs FL. Open 7 days a week.",
-    url: "https://vaportechusa.com",
+    url: BUSINESS.url,
     siteName: "VaporTech USA",
     type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Smoke & Vape Shop in Coral Springs, FL | VaporTech USA",
+    description:
+      "Every major brand in stock at 8005 W Sample Rd, Coral Springs FL. Open 7 days a week.",
   },
   robots: { index: true, follow: true },
 };
@@ -62,6 +71,7 @@ export default function RootLayout({
         <LocalBusinessSchema />
         {children}
         <Footer />
+        <AgeGate />
       </body>
     </html>
   );
