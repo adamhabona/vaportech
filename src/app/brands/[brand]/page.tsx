@@ -141,6 +141,24 @@ export default async function BrandPage({ params }: PageParams) {
             </p>
           </div>
 
+          {data.flavors && data.flavors.length > 0 ? (
+            <div>
+              <h2 className="font-serif-display text-2xl md:text-4xl text-white tracking-tight">
+                {data.name} flavors in stock
+              </h2>
+              <ul className="mt-6 flex flex-wrap gap-2">
+                {data.flavors.map((flavor) => (
+                  <li
+                    key={flavor}
+                    className="liquid-glass rounded-full px-4 py-2 text-white/90 text-sm"
+                  >
+                    {flavor}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
+
           <div>
             <h2 className="font-serif-display text-2xl md:text-4xl text-white tracking-tight">
               Why buy {data.name} from {BUSINESS.name}
