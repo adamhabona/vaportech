@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import { LazyVideo } from "@/components/ui/lazy-video";
+import { CATEGORIES } from "@/lib/data/categories";
 
 const CARDS = [
   {
@@ -58,16 +60,10 @@ export function ServicesSection() {
             >
               <Link href={card.href} className="block">
                 <div className="relative aspect-video overflow-hidden">
-                  <video
-                    muted
-                    autoPlay
-                    loop
-                    playsInline
-                    preload="auto"
+                  <LazyVideo
+                    src={card.videoSrc}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  >
-                    <source src={card.videoSrc} type="video/mp4" />
-                  </video>
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                 </div>
 
@@ -90,6 +86,29 @@ export function ServicesSection() {
               </Link>
             </motion.div>
           ))}
+        </div>
+
+        <div className="mt-12 md:mt-16">
+          <div className="text-white/40 text-xs tracking-widest uppercase mb-5">
+            Shop by category
+          </div>
+          <ul className="grid grid-cols-2 md:grid-cols-5 gap-3">
+            {CATEGORIES.map((category) => (
+              <li key={category.slug}>
+                <Link
+                  href={`/shop/${category.slug}`}
+                  className="liquid-glass rounded-2xl px-4 py-4 h-full flex items-center justify-between gap-2 text-white/80 text-sm hover:text-white hover:bg-white/5 transition-colors"
+                >
+                  <span>{category.name}</span>
+                  <ArrowUpRight
+                    size={14}
+                    aria-hidden="true"
+                    className="shrink-0 text-white/40"
+                  />
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>
