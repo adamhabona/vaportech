@@ -78,8 +78,15 @@ export function ReviewsSection() {
               >
                 &ldquo;{review.quote}&rdquo;
               </blockquote>
-              <div className="mt-auto text-white/40 text-xs tracking-widest uppercase">
-                Customer review on Google
+              <div className="mt-auto text-xs tracking-widest uppercase">
+                {review.author ? (
+                  <span className="block text-white/80 mb-1">
+                    {review.author}
+                  </span>
+                ) : null}
+                <span className="text-white/40">
+                  {review.author ? "Google review" : "Customer review on Google"}
+                </span>
               </div>
             </li>
           ))}

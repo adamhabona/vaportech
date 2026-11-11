@@ -13,6 +13,8 @@ export const GOOGLE_RATING = {
 export interface ReviewExcerpt {
   /** Customer's words, quoted from their public Google review. */
   quote: string;
+  /** Reviewer's public Google display name, when known. */
+  author?: string;
 }
 
 export const REVIEW_EXCERPTS: ReviewExcerpt[] = [
@@ -25,7 +27,8 @@ export const REVIEW_EXCERPTS: ReviewExcerpt[] = [
       "Amazing store. Amazing service. Great prices and they have all that you need.",
   },
   {
-    quote: "Great customer service and amazing prices.",
+    quote: "Great customer service and amazing prices. My go to store for sure.",
+    author: "Marvin Bennedict",
   },
   {
     quote: "This place is good and very friendly people too.",
