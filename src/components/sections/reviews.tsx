@@ -12,6 +12,13 @@ function Stars({ size = 16 }: { size?: number }) {
   );
 }
 
+// Large screens use a six-column grid: wide cards sit two per row, the rest
+// three per row. This picks how many leading cards are wide so no row is
+// left with a gap, whatever the number of reviews.
+const REMAINDER = REVIEW_EXCERPTS.length % 3;
+const WIDE_COUNT = REMAINDER === 0 ? 0 : REMAINDER === 1 ? 4 : 2;
+const ODD_COUNT = REVIEW_EXCERPTS.length % 2 === 1;
+
 export function ReviewsSection() {
   return (
     <section
@@ -68,12 +75,16 @@ export function ReviewsSection() {
             <li
               key={review.quote}
               className={`liquid-glass rounded-3xl p-6 md:p-8 flex flex-col gap-5 ${
-                i < 2 ? "lg:col-span-3" : "lg:col-span-2"
-              } ${i === REVIEW_EXCERPTS.length - 1 ? "sm:col-span-2" : ""}`}
+                i < WIDE_COUNT ? "lg:col-span-3" : "lg:col-span-2"
+              } ${
+                ODD_COUNT && i === REVIEW_EXCERPTS.length - 1
+                  ? "sm:col-span-2"
+                  : ""
+              }`}
             >
               <blockquote
                 className={`font-serif-display text-white leading-snug tracking-tight ${
-                  i < 2 ? "text-2xl md:text-3xl" : "text-xl md:text-2xl"
+                  i < WIDE_COUNT ? "text-2xl md:text-3xl" : "text-xl md:text-2xl"
                 }`}
               >
                 &ldquo;{review.quote}&rdquo;
