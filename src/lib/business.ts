@@ -26,8 +26,13 @@ export const BUSINESS = {
     { open: 10, close: 22 },
     { open: 10, close: 22 },
   ],
+  googlePlaceId: "ChIJNwiBhCoF2YgR3YbMnrUq-60",
   mapsUrl:
-    "https://www.google.com/maps/search/?api=1&query=VaporTech+USA+8005+W+Sample+Rd+Coral+Springs+FL+33065",
+    "https://www.google.com/maps/search/?api=1&query=Vaportech+Smoke+%26+Vape+Shop+Coral+Springs&query_place_id=ChIJNwiBhCoF2YgR3YbMnrUq-60",
+  googleReviewsUrl:
+    "https://search.google.com/local/reviews?placeid=ChIJNwiBhCoF2YgR3YbMnrUq-60",
+  googleWriteReviewUrl:
+    "https://search.google.com/local/writereview?placeid=ChIJNwiBhCoF2YgR3YbMnrUq-60",
   directionsUrl:
     "https://www.google.com/maps/dir/?api=1&destination=8005+W+Sample+Rd%2C+Coral+Springs%2C+FL+33065",
   socialImagePath: "/opengraph-image",
