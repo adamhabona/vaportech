@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BRANDS, getBrandBySlug } from "@/lib/data/brands";
@@ -82,6 +83,25 @@ export default async function BrandPage({ params }: PageParams) {
 
       <section className="bg-black px-6 py-12">
         <div className="max-w-3xl mx-auto space-y-12">
+          {data.photos?.map((photo) => (
+            <figure key={photo.src}>
+              <Image
+                src={photo.src}
+                alt={photo.alt}
+                width={photo.width}
+                height={photo.height}
+                sizes="(max-width: 768px) 100vw, 768px"
+                loading="eager"
+                className="w-full h-auto rounded-3xl border border-white/10"
+              />
+              {photo.caption ? (
+                <figcaption className="mt-3 text-white/50 text-sm">
+                  {photo.caption}
+                </figcaption>
+              ) : null}
+            </figure>
+          ))}
+
           <div>
             <h2 className="font-serif-display text-2xl md:text-4xl text-white tracking-tight">
               About {data.name}
