@@ -116,7 +116,7 @@ export const BRANDS: Brand[] = [
           "Yes. We stock the full Pulse and Skyview flavor lineups available in current US distribution.",
       },
     ],
-    relatedBrandSlugs: ["raz", "lost-mary", "funky-republic"],
+    relatedBrandSlugs: ["raz", "lost-mary", "hqd"],
     relatedCategorySlugs: ["disposable-vapes"],
   },
   {
@@ -201,35 +201,35 @@ export const BRANDS: Brand[] = [
     relatedCategorySlugs: ["disposable-vapes"],
   },
   {
-    slug: "funky-republic",
-    name: "Funky Republic",
+    slug: "hqd",
+    name: "HQD",
     category: "disposable",
     intro:
-      "Funky Republic pushes the format toward higher puff counts and more vibrant flavor profiles. The Ti7000 is one of the strongest sellers in our store.",
+      "HQD is one of the longest-running names in disposable vapes, and it is on the wall at our Coral Springs store. We have 30+ HQD flavors in stock.",
     history:
-      "Funky Republic launched with a focus on high-capacity disposables and a bolder flavor library. The Ti7000 became a fast favorite for users who wanted a longer-lasting device without stepping up to mod gear.",
+      "HQD built its name on the Cuvie line of disposables and has stayed on shelves through years of turnover in the category. That staying power is why customers still ask for it by name.",
     distinct:
-      "The Ti7000 features a smart display showing battery and e-liquid level, plus a slightly tighter draw than most disposables in its class. Flavor profiles lean more vibrant and tropical, which appeals to summer-heavy markets like South Florida.",
+      "HQD is a familiar pick for people who want a wide flavor choice from a brand they already know. With 30+ flavors in stock, there is a good chance the one you are looking for is on the shelf today.",
     productHighlights: [
-      "Funky Republic Ti7000",
-      "Funky Lands Vi15000 collaboration",
-      "Library includes Tropical Rainbow Blast, Raz Ice, Cherry Lemon",
+      "30+ HQD flavors in stock",
+      "Authentic product from authorized distribution",
+      "Ask our staff which HQD models are on the shelf today",
     ],
     faqs: [
       {
-        question: "What makes Funky Republic different?",
+        question: "How many HQD flavors do you carry?",
         answer:
-          "A bolder flavor philosophy. Funky Republic leans more vibrant and tropical than most of the disposable wall, and the Ti7000 adds a smart display for battery and e-liquid level.",
+          "We have 30+ HQD flavors in stock at our Coral Springs store. Call or stop in to check on a specific one.",
       },
       {
-        question: "Does the Ti7000 have a screen?",
+        question: "Is your HQD authentic?",
         answer:
-          "Yes. The Ti7000 includes a small display showing battery percentage and e-liquid level so you know when to charge or replace.",
+          "Yes. Like everything on our disposable wall, HQD comes from authorized distribution.",
       },
       {
-        question: "What flavors are most popular?",
+        question: "Which HQD should I pick?",
         answer:
-          "Tropical Rainbow Blast and Raz Ice are our top sellers. Specific availability rotates weekly.",
+          "Tell our staff what flavors you have liked before and they will point you to the closest match.",
       },
     ],
     relatedBrandSlugs: ["yovo", "lost-mary", "raz"],

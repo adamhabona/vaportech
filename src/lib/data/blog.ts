@@ -69,7 +69,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         heading: "Top picks for 2026",
-        body: "Raz CA6000 and DC25000 lead our store by volume. Lost Mary OS5000 stays in the top three with reliable mesh coil flavor. Geek Bar Pulse and Skyview hold premium positions and the screens add genuine functional value. Funky Republic Ti7000 brings vibrant flavor profiles and consistent battery. Below those, Mr. Fog Switch and Hyde Edge Rave deliver good value at lower price points.",
+        body: "Raz CA6000 and DC25000 lead our store by volume. Lost Mary OS5000 stays in the top three with reliable mesh coil flavor. Geek Bar Pulse and Skyview hold premium positions and the screens add genuine functional value. HQD adds 30+ flavors in stock. Below those, Mr. Fog Switch and Hyde Edge Rave deliver good value at lower price points.",
       },
       {
         heading: "Counterfeit risk by brand",
@@ -77,7 +77,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         heading: "Specific flavor recommendations",
-        body: "If you want clean fruit, Raz Polar Ice or Lost Mary Blue Razz Ice. If you want dessert, Geek Bar Pulse Strawberry Mango or Funky Republic Tropical Rainbow Blast. If you want menthol, Lost Mary Watermelon Ice. Tell our staff what you've liked and they'll point you to the closest profile.",
+        body: "If you want clean fruit, Raz Polar Ice or Lost Mary Blue Razz Ice. If you want dessert, Geek Bar Pulse Strawberry Mango. If you want menthol, Lost Mary Watermelon Ice. Tell our staff what you've liked and they'll point you to the closest profile.",
       },
       {
         heading: "What to avoid",
@@ -265,8 +265,8 @@ export const BLOG_POSTS: BlogPost[] = [
         body: "Premium build, dual-mode operation, screen display. Strong demand at the higher price tier.",
       },
       {
-        heading: "5. Funky Republic Ti7000",
-        body: "Tropical Rainbow Blast leads. Bold flavor profiles and a tighter draw than most of the category.",
+        heading: "5. HQD",
+        body: "A long-running disposable name with one of the widest flavor ranges on our wall. 30+ flavors in stock.",
       },
       {
         heading: "6. Lost Mary MO5000",
@@ -417,7 +417,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         heading: "New flavor releases",
-        body: "Raz, Lost Mary, and Funky Republic each pushed multiple new flavors in late 2025 and early 2026. Tropical and beverage profiles led the releases. Our Instagram lists current arrivals.",
+        body: "Raz and Lost Mary each pushed multiple new flavors in late 2025 and early 2026. Tropical and beverage profiles led the releases. Our Instagram lists current arrivals.",
       },
       {
         heading: "What we passed on",
