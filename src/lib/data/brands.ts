@@ -244,12 +244,12 @@ export const BRANDS: Brand[] = [
     history:
       "Fume comes from QR Joy, a Florida-based company, which is part of why the brand is so well known across South Florida. The lineup grew step by step, from the pen-style Extra and Ultra to the box-style Infinity and on to the Pro.",
     distinct:
-      "Fume keeps things simple: draw-activated devices with nothing to set up, in a range of sizes. The Extra is the compact pick at 1500 puffs, the Ultra steps up to 2500, and the Infinity runs to 3500 in a box-style body. The Fume Pro sits at the top of the line.",
+      "Fume keeps things simple: draw-activated devices with nothing to set up, in a range of sizes. The Extra is the compact pick at 1500 puffs, the Ultra steps up to 2500, and the Infinity runs to 3500 in a box-style body. The Fume Pro sits at the top of the line at 30,000 puffs.",
     productHighlights: [
       "Fume Extra (1500 puffs, pen style)",
       "Fume Ultra (2500 puffs, pen style)",
       "Fume Infinity (3500 puffs, box style)",
-      "Fume Pro",
+      "Fume Pro (30,000 puffs)",
     ],
     faqs: [
       {
@@ -258,9 +258,9 @@ export const BRANDS: Brand[] = [
           "Fume Extra, Fume Ultra, Fume Infinity, and Fume Pro. Call or stop in to check on a specific flavor.",
       },
       {
-        question: "What is the difference between Fume Extra, Ultra, and Infinity?",
+        question: "What is the difference between the Fume models?",
         answer:
-          "Mostly size and how long they last. The Extra is rated at 1500 puffs and the Ultra at 2500, both in a slim pen shape. The Infinity is rated at 3500 puffs in a box-style body.",
+          "Mostly size and how long they last. The Extra is rated at 1500 puffs and the Ultra at 2500, both in a slim pen shape. The Infinity is rated at 3500 puffs in a box-style body. The Fume Pro is the biggest, rated at 30,000 puffs.",
       },
       {
         question: "Is your Fume authentic?",
