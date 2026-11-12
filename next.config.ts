@@ -33,6 +33,12 @@ const nextConfig: NextConfig = {
         destination: "/brands/foger",
         permanent: true,
       },
+      // Breeze was replaced by Fifty Bar.
+      {
+        source: "/brands/breeze",
+        destination: "/brands/fifty-bar",
+        permanent: true,
+      },
     ];
   },
 };

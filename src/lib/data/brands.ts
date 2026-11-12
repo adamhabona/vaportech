@@ -268,7 +268,7 @@ export const BRANDS: Brand[] = [
           "Yes. Like everything on our disposable wall, Fume comes from authorized distribution.",
       },
     ],
-    relatedBrandSlugs: ["off-stamp", "foger", "breeze"],
+    relatedBrandSlugs: ["off-stamp", "foger", "fifty-bar"],
     relatedCategorySlugs: ["disposable-vapes"],
   },
   {
@@ -304,7 +304,7 @@ export const BRANDS: Brand[] = [
           "Yes. Like everything on our disposable wall, Off-Stamp comes from authorized distribution.",
       },
     ],
-    relatedBrandSlugs: ["fume", "foger", "breeze"],
+    relatedBrandSlugs: ["fume", "foger", "fifty-bar"],
     relatedCategorySlugs: ["disposable-vapes"],
   },
   {
@@ -340,40 +340,40 @@ export const BRANDS: Brand[] = [
           "Yes. Like everything on our disposable wall, Foger comes from authorized distribution.",
       },
     ],
-    relatedBrandSlugs: ["yovo", "off-stamp", "breeze"],
+    relatedBrandSlugs: ["yovo", "off-stamp", "fifty-bar"],
     relatedCategorySlugs: ["disposable-vapes"],
   },
   {
-    slug: "breeze",
-    name: "Breeze",
+    slug: "fifty-bar",
+    name: "Fifty Bar",
     category: "disposable",
     intro:
-      "Breeze is a staple in our disposable wall. Reliable, well-priced, and stocked across multiple capacity tiers.",
+      "Fifty Bar is the disposable with e-liquid from Beard Vape Co., a brand vapers knew long before disposables took over. It is on the wall at our Coral Springs store.",
     history:
-      "Breeze established its position by focusing on reliability over novelty. The Pro and Smoke lines have remained consistent product offerings over multiple years, which is unusual in a category that churns quickly.",
+      "Beard Vape Co. built its reputation on bottled e-liquid, and Fifty Bar brought those recipes to a disposable. The original Fifty Bar 6500 made the name, and the line has since grown to include the Fifty Bar V2 20K.",
     distinct:
-      "Breeze has held up. While many disposables come and go, Breeze still delivers what it promised three years ago: a pocketable disposable with accurate flavor at a reasonable price.",
+      "Flavor is the reason people ask for Fifty Bar. The Fifty Bar 6500 is rated at up to 6,500 puffs, recharges over USB-C, and comes in a mix of fruit, ice, and dessert blends that are more layered than most of the disposable wall.",
     productHighlights: [
-      "Breeze Pro",
-      "Breeze Plus",
-      "Breeze Smoke",
-      "Flavor library focuses on classic fruit and menthol profiles",
+      "Fifty Bar 6500 (up to 6,500 puffs, USB-C rechargeable)",
+      "E-liquid by Beard Vape Co.",
+      "Fruit, ice, and dessert blends",
+      "Ask our staff which Fifty Bar models and flavors are on the shelf today",
     ],
     faqs: [
       {
-        question: "Is Breeze rechargeable?",
+        question: "Who makes Fifty Bar?",
         answer:
-          "Some current Breeze models include USB-C charging. Older units are not. Check the specific model when buying.",
+          "The e-liquid comes from Beard Vape Co., a long-established e-liquid maker. That is why the flavors are a step more layered than a typical disposable.",
       },
       {
-        question: "How does Breeze compare to other mid-tier disposables?",
+        question: "Is the Fifty Bar rechargeable?",
         answer:
-          "Breeze tends to run smoother on draw resistance than most at its price. Pick the flavor profile that suits you.",
+          "Yes. The Fifty Bar 6500 recharges through a USB-C port.",
       },
       {
-        question: "Do you stock current Breeze flavors?",
+        question: "Is your Fifty Bar authentic?",
         answer:
-          "Yes. We restock weekly from authorized distribution.",
+          "Yes. Like everything on our disposable wall, Fifty Bar comes from authorized distribution.",
       },
     ],
     relatedBrandSlugs: ["fume", "off-stamp", "foger"],
