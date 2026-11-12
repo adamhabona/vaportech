@@ -69,11 +69,11 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         heading: "Top picks for 2026",
-        body: "Raz CA6000 and DC25000 lead our store by volume. Lost Mary OS5000 stays in the top three with reliable mesh coil flavor. Geek Bar Pulse and Skyview hold premium positions and the screens add genuine functional value. HQD adds 30+ flavors in stock. Below those, Mr. Fog Switch and Hyde Edge Rave deliver good value at lower price points.",
+        body: "Raz CA6000 and DC25000 lead our store by volume. Lost Mary OS5000 stays in the top three with reliable mesh coil flavor. Geek Bar Pulse and Skyview hold premium positions and the screens add genuine functional value. HQD adds 30+ flavors in stock. Below those, Fume Infinity and Hyde Edge Rave deliver good value at lower price points.",
       },
       {
         heading: "Counterfeit risk by brand",
-        body: "Raz is among the most counterfeited disposables in the US right now. Lost Mary and Geek Bar see meaningful counterfeiting but less. Lower-tier brands like Mr. Fog and Hyde are less faked because the price-to-effort ratio doesn't work for counterfeiters. Buying from authorized retail eliminates the risk entirely.",
+        body: "Raz is among the most counterfeited disposables in the US right now. Lost Mary and Geek Bar see meaningful counterfeiting but less. Lower-tier brands like Hyde are less faked because the price-to-effort ratio doesn't work for counterfeiters. Buying from authorized retail eliminates the risk entirely.",
       },
       {
         heading: "Specific flavor recommendations",
@@ -281,8 +281,8 @@ export const BLOG_POSTS: BlogPost[] = [
         body: "Pod and battery design rated at 50K puffs, with adjustable airflow and wattage. More than 30 flavors available, all in stock.",
       },
       {
-        heading: "9. Mr. Fog Switch",
-        body: "Dual-flavor toggle is the differentiator. Reliable mid-tier option.",
+        heading: "9. Fume Infinity",
+        body: "Florida brand with a loyal local following. 3500 puffs in a box-style body, alongside the Fume Extra, Ultra, and Pro.",
       },
       {
         heading: "10. Hyde Rebel Pro",

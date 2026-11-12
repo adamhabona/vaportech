@@ -236,36 +236,36 @@ export const BRANDS: Brand[] = [
     relatedCategorySlugs: ["disposable-vapes"],
   },
   {
-    slug: "mr-fog",
-    name: "Mr. Fog",
+    slug: "fume",
+    name: "Fume",
     category: "disposable",
     intro:
-      "Mr. Fog is a workhorse disposable brand. The Switch and Max Air lines deliver reliable flavor at a price that keeps regulars coming back.",
+      "Fume is a Florida disposable brand with a loyal local following. We carry the Fume Extra, Fume Ultra, Fume Infinity, and Fume Pro at our Coral Springs store.",
     history:
-      "Mr. Fog established itself in the early disposable era with a focus on practical reliability and accessible pricing. The brand expanded through the Switch (dual-flavor toggle) and Max Air (extended capacity) lines, both of which earned shelf space across mainstream retail.",
+      "Fume comes from QR Joy, a Florida-based company, which is part of why the brand is so well known across South Florida. The lineup grew step by step, from the pen-style Extra and Ultra to the box-style Infinity and on to the Pro.",
     distinct:
-      "The Switch's dual-flavor toggle is unusual in the category and works as advertised. Mr. Fog also tends to keep flavors accurate to the package even at the lower price tier, which is rarer than it should be.",
+      "Fume keeps things simple: draw-activated devices with nothing to set up, in a range of sizes. The Extra is the compact pick at 1500 puffs, the Ultra steps up to 2500, and the Infinity runs to 3500 in a box-style body. The Fume Pro sits at the top of the line at 30,000 puffs.",
     productHighlights: [
-      "Mr. Fog Switch (dual flavor)",
-      "Mr. Fog Max Air",
-      "Mr. Fog Max Pro",
-      "Library spans menthol, fruit, mint",
+      "Fume Extra (1500 puffs, pen style)",
+      "Fume Ultra (2500 puffs, pen style)",
+      "Fume Infinity (3500 puffs, box style)",
+      "Fume Pro (30,000 puffs)",
     ],
     faqs: [
       {
-        question: "How does the Mr. Fog Switch work?",
+        question: "Which Fume models do you carry?",
         answer:
-          "A small toggle on the device alternates between two pre-loaded flavors. The seal between the two reservoirs is tight enough that flavors don't blend.",
+          "Fume Extra, Fume Ultra, Fume Infinity, and Fume Pro. Call or stop in to check on a specific flavor.",
       },
       {
-        question: "Are Mr. Fog devices rechargeable?",
+        question: "What is the difference between the Fume models?",
         answer:
-          "The Max Air and Max Pro models are rechargeable via USB-C. Older Switch units are not.",
+          "Mostly size and how long they last. The Extra is rated at 1500 puffs and the Ultra at 2500, both in a slim pen shape. The Infinity is rated at 3500 puffs in a box-style body. The Fume Pro is the biggest, rated at 30,000 puffs.",
       },
       {
-        question: "Are Mr. Fog flavors accurate?",
+        question: "Is your Fume authentic?",
         answer:
-          "Yes. Especially in fruit and menthol profiles. Dessert flavors are good but occasionally less complex than premium-tier brands.",
+          "Yes. Like everything on our disposable wall, Fume comes from authorized distribution.",
       },
     ],
     relatedBrandSlugs: ["hyde", "esco-bar", "breeze"],
@@ -304,7 +304,7 @@ export const BRANDS: Brand[] = [
           "Fruit, ice, and menthol profiles are consistent. Dessert and beverage profiles are present but vary more across batches.",
       },
     ],
-    relatedBrandSlugs: ["mr-fog", "esco-bar", "breeze"],
+    relatedBrandSlugs: ["fume", "esco-bar", "breeze"],
     relatedCategorySlugs: ["disposable-vapes"],
   },
   {
@@ -340,7 +340,7 @@ export const BRANDS: Brand[] = [
           "Yes. Mesh coil construction is well-suited to clean fruit profiles, which is where Esco Bar's library is strongest.",
       },
     ],
-    relatedBrandSlugs: ["mr-fog", "hyde", "breeze"],
+    relatedBrandSlugs: ["fume", "hyde", "breeze"],
     relatedCategorySlugs: ["disposable-vapes"],
   },
   {
@@ -376,7 +376,7 @@ export const BRANDS: Brand[] = [
           "Yes. We restock weekly from authorized distribution.",
       },
     ],
-    relatedBrandSlugs: ["mr-fog", "hyde", "esco-bar"],
+    relatedBrandSlugs: ["fume", "hyde", "esco-bar"],
     relatedCategorySlugs: ["disposable-vapes"],
   },
   {
