@@ -46,7 +46,7 @@ const FAQS = [
   {
     question: "What brands do you carry?",
     answer:
-      "Across disposables: Raz, Lost Mary, Geek Bar, Yovo, Funky Republic, Mr. Fog, Hyde, Esco Bar, and Breeze. Across hemp-derivatives: Mellow Fellow, Cake, Delta Extrax, 3CHI, Urb, TRĒ House, Hometown Hero, Torch, Flying Monkey, and Mood. Across pod systems and mods: SMOK, Vaporesso, GeekVape, Juul, and Vuse. Plus glass, hookah accessories, kratom, CBD, RAW, Zig-Zag, Backwoods, Storz and Bickel, and PAX.",
+      "Across disposables: Raz, Lost Mary, Geek Bar, Yovo, HQD, Mr. Fog, Hyde, Esco Bar, and Breeze. Across hemp-derivatives: Mellow Fellow, Cake, Delta Extrax, 3CHI, Urb, TRĒ House, Hometown Hero, Torch, Flying Monkey, and Mood. Across pod systems and mods: SMOK, Vaporesso, GeekVape, Juul, and Vuse. Plus glass, hookah accessories, kratom, CBD, RAW, Zig-Zag, Backwoods, Storz and Bickel, and PAX.",
   },
   {
     question: "Is Delta-8 legal in Florida?",
@@ -161,7 +161,7 @@ const FAQS = [
   {
     question: "What's the most popular disposable vape right now?",
     answer:
-      "Raz CA6000 and Lost Mary OS5000 lead our store by volume, with Geek Bar Pulse and Funky Republic Ti7000 close behind. Specific flavor demand shifts monthly.",
+      "Raz CA6000 and Lost Mary OS5000 lead our store by volume, with Geek Bar Pulse and HQD close behind. Specific flavor demand shifts monthly.",
   },
   {
     question: "Do you cash registers accept tap-to-pay?",

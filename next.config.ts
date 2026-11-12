@@ -9,6 +9,12 @@ const nextConfig: NextConfig = {
         destination: "/brands/yovo",
         permanent: true,
       },
+      // Funky Republic was replaced by HQD.
+      {
+        source: "/brands/funky-republic",
+        destination: "/brands/hqd",
+        permanent: true,
+      },
     ];
   },
 };

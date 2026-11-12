@@ -7,7 +7,7 @@ export const CATEGORIES: Category[] = [
     h1: "Disposable Vapes in Coral Springs",
     intro:
       "Disposables are still the fastest growing category in vaping, and our Coral Springs storefront carries every flagship brand that South Florida actually buys. Walk in and walk out with a fresh device, current flavor, and a real conversation about what hits the way you want it to.",
-    body: "Our disposable wall is restocked daily. Raz, Lost Mary, Geek Bar, Yovo, Funky Republic, Hyde, Esco Bar, Breeze, Mr. Fog, and the rest of the rotation move quickly, and we keep dates fresh. If you walked into another shop and couldn't find what you wanted, there's a strong chance we have it on the shelf today. We also stock newer arrivals as soon as distribution opens, which matters in a category where flavor releases drive every conversation.",
+    body: "Our disposable wall is restocked daily. Raz, Lost Mary, Geek Bar, Yovo, HQD, Hyde, Esco Bar, Breeze, Mr. Fog, and the rest of the rotation move quickly, and we keep dates fresh. If you walked into another shop and couldn't find what you wanted, there's a strong chance we have it on the shelf today. We also stock newer arrivals as soon as distribution opens, which matters in a category where flavor releases drive every conversation.",
     sections: [
       {
         heading: "What we stock and why",
@@ -26,7 +26,7 @@ export const CATEGORIES: Category[] = [
       {
         question: "What is the most popular disposable vape in Coral Springs right now?",
         answer:
-          "Raz and Lost Mary remain the two most consistent sellers in our store, with Geek Bar and Funky Republic close behind. Specific flavor demand shifts monthly, so we recommend stopping in to see what's currently in rotation.",
+          "Raz and Lost Mary remain the two most consistent sellers in our store, with Geek Bar and HQD close behind. Specific flavor demand shifts monthly, so we recommend stopping in to see what's currently in rotation.",
       },
       {
         question: "Do you carry the latest flavor drops?",
@@ -44,7 +44,7 @@ export const CATEGORIES: Category[] = [
       "lost-mary",
       "geek-bar",
       "yovo",
-      "funky-republic",
+      "hqd",
       "mr-fog",
       "hyde",
       "esco-bar",

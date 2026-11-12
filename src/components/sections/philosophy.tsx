@@ -46,7 +46,7 @@ export function PhilosophySection() {
                 Every brand, in stock
               </div>
               <p className="text-white/70 text-base md:text-lg leading-relaxed">
-                Raz, Lost Mary, Geek Bar, Yovo, Funky Republic, Hyde, and
+                Raz, Lost Mary, Geek Bar, Yovo, HQD, Hyde, and
                 dozens more. Our shelves carry the brands South Florida actually
                 wants, restocked the moment they drop.
               </p>
