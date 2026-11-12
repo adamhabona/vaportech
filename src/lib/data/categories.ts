@@ -7,7 +7,7 @@ export const CATEGORIES: Category[] = [
     h1: "Disposable Vapes in Coral Springs",
     intro:
       "Disposables are still the fastest growing category in vaping, and our Coral Springs storefront carries every flagship brand that South Florida actually buys. Walk in and walk out with a fresh device, current flavor, and a real conversation about what hits the way you want it to.",
-    body: "Our disposable wall is restocked daily. Raz, Lost Mary, Geek Bar, Yovo, HQD, Hyde, Esco Bar, Breeze, Fume, and the rest of the rotation move quickly, and we keep dates fresh. If you walked into another shop and couldn't find what you wanted, there's a strong chance we have it on the shelf today. We also stock newer arrivals as soon as distribution opens, which matters in a category where flavor releases drive every conversation.",
+    body: "Our disposable wall is restocked daily. Raz, Lost Mary, Geek Bar, Yovo, HQD, Off-Stamp, Esco Bar, Breeze, Fume, and the rest of the rotation move quickly, and we keep dates fresh. If you walked into another shop and couldn't find what you wanted, there's a strong chance we have it on the shelf today. We also stock newer arrivals as soon as distribution opens, which matters in a category where flavor releases drive every conversation.",
     sections: [
       {
         heading: "What we stock and why",
@@ -46,7 +46,7 @@ export const CATEGORIES: Category[] = [
       "yovo",
       "hqd",
       "fume",
-      "hyde",
+      "off-stamp",
       "esco-bar",
       "breeze",
     ],

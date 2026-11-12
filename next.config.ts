@@ -21,6 +21,12 @@ const nextConfig: NextConfig = {
         destination: "/brands/fume",
         permanent: true,
       },
+      // Hyde was replaced by Off-Stamp.
+      {
+        source: "/brands/hyde",
+        destination: "/brands/off-stamp",
+        permanent: true,
+      },
     ];
   },
 };
