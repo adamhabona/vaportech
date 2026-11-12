@@ -268,40 +268,40 @@ export const BRANDS: Brand[] = [
           "Yes. Like everything on our disposable wall, Fume comes from authorized distribution.",
       },
     ],
-    relatedBrandSlugs: ["hyde", "esco-bar", "breeze"],
+    relatedBrandSlugs: ["off-stamp", "esco-bar", "breeze"],
     relatedCategorySlugs: ["disposable-vapes"],
   },
   {
-    slug: "hyde",
-    name: "Hyde",
+    slug: "off-stamp",
+    name: "Off-Stamp",
     category: "disposable",
     intro:
-      "Hyde is a longtime disposable presence with a wide format catalog. The IQ, Edge, and Rebel lines all hold spots on our wall depending on what's currently in stock.",
+      "Off-Stamp does disposables differently: a small flavor pod that snaps onto a separate magnetic battery dock. It is on the wall at our Coral Springs store.",
     history:
-      "Hyde was one of the earliest disposable brands to scale across the United States. The brand has cycled through multiple device generations, each adapting to the puff count and form factor demands of an evolving market.",
+      "Off-Stamp made its name with the SW9000, a two-part design that splits the disposable from its battery. The SW16000 followed with a larger pod, and the format has built a following with people who want a small device in the pocket without giving up capacity.",
     distinct:
-      "Hyde has range. The IQ stick format suits users who want simple. The Edge and Rebel lines bring rechargeability and higher capacities. Flavor is consistent across the line.",
+      "The pod and the battery dock are separate pieces held together by a magnet. The pod is tiny on its own, and the dock is what recharges it. When the pod is finished, you keep the dock and snap on a new flavor.",
     productHighlights: [
-      "Hyde IQ",
-      "Hyde Edge Rave",
-      "Hyde Rebel Pro",
-      "Hyde N-Bar",
+      "Pod and magnetic battery dock design",
+      "Keep the dock, swap the flavor pod",
+      "Authentic product from authorized distribution",
+      "Ask our staff which Off-Stamp models and flavors are on the shelf today",
     ],
     faqs: [
       {
-        question: "Which Hyde lasts the longest?",
+        question: "How does Off-Stamp work?",
         answer:
-          "The Rebel Pro and N-Bar are the highest-capacity formats currently available. The IQ stick is more compact and lower capacity but excellent for occasional use.",
+          "It comes in two parts. The flavor pod snaps onto a battery dock with a magnet, and the dock recharges the pod. Once the pod is done, the dock works with the next one.",
       },
       {
-        question: "Are all Hyde products rechargeable?",
+        question: "Do I need to buy the battery dock every time?",
         answer:
-          "Most current Hyde models include USB-C charging. The IQ stick is not rechargeable. Check the model before buying if charging matters to you.",
+          "No. Kits come with a dock, and after that you can pick up pods on their own. Ask our staff which pods fit the dock you have.",
       },
       {
-        question: "Where are Hyde flavors strongest?",
+        question: "Is your Off-Stamp authentic?",
         answer:
-          "Fruit, ice, and menthol profiles are consistent. Dessert and beverage profiles are present but vary more across batches.",
+          "Yes. Like everything on our disposable wall, Off-Stamp comes from authorized distribution.",
       },
     ],
     relatedBrandSlugs: ["fume", "esco-bar", "breeze"],
@@ -340,7 +340,7 @@ export const BRANDS: Brand[] = [
           "Yes. Mesh coil construction is well-suited to clean fruit profiles, which is where Esco Bar's library is strongest.",
       },
     ],
-    relatedBrandSlugs: ["fume", "hyde", "breeze"],
+    relatedBrandSlugs: ["fume", "off-stamp", "breeze"],
     relatedCategorySlugs: ["disposable-vapes"],
   },
   {
@@ -366,9 +366,9 @@ export const BRANDS: Brand[] = [
           "Some current Breeze models include USB-C charging. Older units are not. Check the specific model when buying.",
       },
       {
-        question: "How does Breeze compare to Hyde?",
+        question: "How does Breeze compare to other mid-tier disposables?",
         answer:
-          "Both are reliable mid-tier disposables. Breeze tends to run smoother on draw resistance; Hyde has more form factor variety. Pick the flavor profile that suits you.",
+          "Breeze tends to run smoother on draw resistance than most at its price. Pick the flavor profile that suits you.",
       },
       {
         question: "Do you stock current Breeze flavors?",
@@ -376,7 +376,7 @@ export const BRANDS: Brand[] = [
           "Yes. We restock weekly from authorized distribution.",
       },
     ],
-    relatedBrandSlugs: ["fume", "hyde", "esco-bar"],
+    relatedBrandSlugs: ["fume", "off-stamp", "esco-bar"],
     relatedCategorySlugs: ["disposable-vapes"],
   },
   {

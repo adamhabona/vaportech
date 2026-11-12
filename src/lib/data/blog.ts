@@ -69,11 +69,11 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         heading: "Top picks for 2026",
-        body: "Raz CA6000 and DC25000 lead our store by volume. Lost Mary OS5000 stays in the top three with reliable mesh coil flavor. Geek Bar Pulse and Skyview hold premium positions and the screens add genuine functional value. HQD adds 30+ flavors in stock. Below those, Fume Infinity and Hyde Edge Rave deliver good value at lower price points.",
+        body: "Raz CA6000 and DC25000 lead our store by volume. Lost Mary OS5000 stays in the top three with reliable mesh coil flavor. Geek Bar Pulse and Skyview hold premium positions and the screens add genuine functional value. HQD adds 30+ flavors in stock. Below those, Fume Infinity delivers good value at a lower price point, and Off-Stamp offers a pod and battery dock design.",
       },
       {
         heading: "Counterfeit risk by brand",
-        body: "Raz is among the most counterfeited disposables in the US right now. Lost Mary and Geek Bar see meaningful counterfeiting but less. Lower-tier brands like Hyde are less faked because the price-to-effort ratio doesn't work for counterfeiters. Buying from authorized retail eliminates the risk entirely.",
+        body: "Raz is among the most counterfeited disposables in the US right now. Lost Mary and Geek Bar see meaningful counterfeiting but less. Lower-tier brands are less faked because the price-to-effort ratio doesn't work for counterfeiters. Buying from authorized retail eliminates the risk entirely.",
       },
       {
         heading: "Specific flavor recommendations",
@@ -285,8 +285,8 @@ export const BLOG_POSTS: BlogPost[] = [
         body: "Florida brand with a loyal local following. 3500 puffs in a box-style body, alongside the Fume Extra, Ultra, and Pro.",
       },
       {
-        heading: "10. Hyde Rebel Pro",
-        body: "Higher capacity Hyde model with reliable flavor. Strong value pick.",
+        heading: "10. Off-Stamp",
+        body: "Flavor pod that snaps onto a magnetic battery dock. Keep the dock and swap the pod.",
       },
     ],
     relatedPostSlugs: [
