@@ -15,6 +15,12 @@ const nextConfig: NextConfig = {
         destination: "/brands/hqd",
         permanent: true,
       },
+      // Mr. Fog was replaced by Fume.
+      {
+        source: "/brands/mr-fog",
+        destination: "/brands/fume",
+        permanent: true,
+      },
     ];
   },
 };
