@@ -268,7 +268,7 @@ export const BRANDS: Brand[] = [
           "Yes. Like everything on our disposable wall, Fume comes from authorized distribution.",
       },
     ],
-    relatedBrandSlugs: ["off-stamp", "esco-bar", "breeze"],
+    relatedBrandSlugs: ["off-stamp", "foger", "breeze"],
     relatedCategorySlugs: ["disposable-vapes"],
   },
   {
@@ -304,43 +304,43 @@ export const BRANDS: Brand[] = [
           "Yes. Like everything on our disposable wall, Off-Stamp comes from authorized distribution.",
       },
     ],
-    relatedBrandSlugs: ["fume", "esco-bar", "breeze"],
+    relatedBrandSlugs: ["fume", "foger", "breeze"],
     relatedCategorySlugs: ["disposable-vapes"],
   },
   {
-    slug: "esco-bar",
-    name: "Esco Bar",
+    slug: "foger",
+    name: "Foger",
     category: "disposable",
     intro:
-      "Esco Bar is the disposable that builds its identity around mesh coil clarity. The Mega and Mesh lines are core stock for South Florida customers who want clean fruit profiles.",
+      "Foger is one of the most asked-for names in disposables right now, known for the Switch Pro and its swappable flavor pods. It is on the wall at our Coral Springs store.",
     history:
-      "Esco Bar entered the disposable category with a focus on mesh coil construction at a time when most budget disposables still ran cotton-wrapped coils. The flavor accuracy that resulted made the brand a regular shelf-pick for retailers prioritizing taste consistency.",
+      "Foger took off with the Switch Pro, a two-part design that pairs a flavor pod with a separate rechargeable power bank. The idea caught on quickly because it lets people change flavors without replacing the whole device.",
     distinct:
-      "Mesh coil consistency is Esco Bar's strongest argument. Flavor stays clean from first puff to last, and the brand keeps a tight flavor library focused on what actually sells.",
+      "The Switch Pro is built around the swap. The pod, rated at 30K puffs, holds the flavor, and the power bank it clicks into does the charging. When a pod runs out, you keep the power bank and pick up a new pod.",
     productHighlights: [
-      "Esco Bar Mega",
-      "Esco Bar Mesh",
-      "Esco Bar H2O (water-based formulation)",
-      "Library focuses on fruit and ice profiles",
+      "Foger Switch Pro (30K puff pod and power bank system)",
+      "Replacement Switch Pro pods",
+      "Authentic product from authorized distribution",
+      "Ask our staff which Foger flavors are on the shelf today",
     ],
     faqs: [
       {
-        question: "What is the Esco Bar H2O?",
+        question: "How does the Foger Switch Pro work?",
         answer:
-          "A water-based e-liquid formulation that some users find smoother than traditional propylene glycol or vegetable glycerin bases. Flavor profile and throat hit are slightly different from standard formulations.",
+          "It comes in two parts: a flavor pod and a rechargeable power bank. The pod clicks into the power bank, and when the pod is finished you swap in a new one and keep the power bank.",
       },
       {
-        question: "How long does an Esco Bar Mega last?",
+        question: "Can I buy Foger pods on their own?",
         answer:
-          "Roughly 5000 puffs depending on draw style. The Mesh line is similar capacity, with slight variation by model.",
+          "Yes. Once you have the power bank, replacement pods are sold separately. Call or stop in to check which flavors are in stock.",
       },
       {
-        question: "Is Esco Bar good for fruit flavors?",
+        question: "Is your Foger authentic?",
         answer:
-          "Yes. Mesh coil construction is well-suited to clean fruit profiles, which is where Esco Bar's library is strongest.",
+          "Yes. Like everything on our disposable wall, Foger comes from authorized distribution.",
       },
     ],
-    relatedBrandSlugs: ["fume", "off-stamp", "breeze"],
+    relatedBrandSlugs: ["yovo", "off-stamp", "breeze"],
     relatedCategorySlugs: ["disposable-vapes"],
   },
   {
@@ -376,7 +376,7 @@ export const BRANDS: Brand[] = [
           "Yes. We restock weekly from authorized distribution.",
       },
     ],
-    relatedBrandSlugs: ["fume", "off-stamp", "esco-bar"],
+    relatedBrandSlugs: ["fume", "off-stamp", "foger"],
     relatedCategorySlugs: ["disposable-vapes"],
   },
   {

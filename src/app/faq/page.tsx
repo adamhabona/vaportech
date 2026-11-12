@@ -46,7 +46,7 @@ const FAQS = [
   {
     question: "What brands do you carry?",
     answer:
-      "Across disposables: Raz, Lost Mary, Geek Bar, Yovo, HQD, Fume, Off-Stamp, Esco Bar, and Breeze. Across hemp-derivatives: Mellow Fellow, Cake, Delta Extrax, 3CHI, Urb, TRĒ House, Hometown Hero, Torch, Flying Monkey, and Mood. Across pod systems and mods: SMOK, Vaporesso, GeekVape, Juul, and Vuse. Plus glass, hookah accessories, kratom, CBD, RAW, Zig-Zag, Backwoods, Storz and Bickel, and PAX.",
+      "Across disposables: Raz, Lost Mary, Geek Bar, Yovo, HQD, Fume, Off-Stamp, Foger, and Breeze. Across hemp-derivatives: Mellow Fellow, Cake, Delta Extrax, 3CHI, Urb, TRĒ House, Hometown Hero, Torch, Flying Monkey, and Mood. Across pod systems and mods: SMOK, Vaporesso, GeekVape, Juul, and Vuse. Plus glass, hookah accessories, kratom, CBD, RAW, Zig-Zag, Backwoods, Storz and Bickel, and PAX.",
   },
   {
     question: "Is Delta-8 legal in Florida?",

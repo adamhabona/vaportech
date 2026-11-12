@@ -27,6 +27,12 @@ const nextConfig: NextConfig = {
         destination: "/brands/off-stamp",
         permanent: true,
       },
+      // Esco Bar was replaced by Foger.
+      {
+        source: "/brands/esco-bar",
+        destination: "/brands/foger",
+        permanent: true,
+      },
     ];
   },
 };
