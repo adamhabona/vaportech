@@ -10,6 +10,7 @@ const NAV_LINKS = [
   { href: "/locations", label: "Locations" },
   { href: "/shop", label: "Shop" },
   { href: "/blog", label: "Blog" },
+  { href: "/rewards", label: "Rewards" },
 ];
 
 const MOBILE_LINKS = [
