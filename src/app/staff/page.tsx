@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { StaffApp } from "@/components/rewards/staff-app";
+import { TestModeBanner } from "@/components/rewards/test-mode-banner";
 import { isStaff } from "@/lib/auth";
 import { REWARD_CATALOG } from "@/lib/rewards/config";
 
@@ -14,6 +15,7 @@ export const viewport: Viewport = { themeColor: "#000000" };
 export default async function StaffPage() {
   return (
     <div className="fixed inset-0 z-40 overflow-auto bg-black">
+      <TestModeBanner />
       <StaffApp authed={await isStaff()} catalog={REWARD_CATALOG} />
     </div>
   );

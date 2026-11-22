@@ -2,6 +2,8 @@ import "server-only";
 import { promises as fs } from "node:fs";
 import os from "node:os";
 import path from "node:path";
+import { createClient } from "@supabase/supabase-js";
+import { mocksAllowed } from "@/lib/test-mode";
 
 /**
  * Clover REST client (v3). Uses a merchant API token from a private Clover app.
@@ -183,7 +185,18 @@ export interface MockOrder {
 
 const MOCK_FILE = path.join(process.env.REWARDS_DATA_DIR || path.join(os.tmpdir(), "vaportech-rewards"), "clover-mock.json");
 
+function kv() {
+  const { SUPABASE_URL: url, SUPABASE_SERVICE_ROLE_KEY: key } = process.env;
+  return url && key ? createClient(url, key, { auth: { persistSession: false } }) : null;
+}
+
 export async function readMockOrders(): Promise<MockOrder[]> {
+  const db = kv();
+  if (db) {
+    const { data, error } = await db.from("rewards_kv").select("value").eq("key", "mock_orders").maybeSingle();
+    if (error) throw new Error(`mock orders: ${error.message}`);
+    return (data?.value as MockOrder[] | undefined) ?? [];
+  }
   try {
     return JSON.parse(await fs.readFile(MOCK_FILE, "utf8"));
   } catch {
@@ -192,6 +205,14 @@ export async function readMockOrders(): Promise<MockOrder[]> {
 }
 
 export async function writeMockOrders(orders: MockOrder[]) {
+  const db = kv();
+  if (db) {
+    // Keep the fake register short: newest 30 orders.
+    const trimmed = [...orders].sort((a, b) => b.createdTime - a.createdTime).slice(0, 30);
+    const { error } = await db.from("rewards_kv").upsert({ key: "mock_orders", value: trimmed, updated_at: new Date().toISOString() });
+    if (error) throw new Error(`mock orders: ${error.message}`);
+    return;
+  }
   await fs.mkdir(path.dirname(MOCK_FILE), { recursive: true });
   await fs.writeFile(MOCK_FILE, JSON.stringify(orders, null, 2));
 }
@@ -254,7 +275,7 @@ export function getClover(): CloverClient {
   if (CLOVER_MERCHANT_ID && CLOVER_API_TOKEN) {
     client = new LiveClover(CLOVER_API_BASE || "https://api.clover.com", CLOVER_MERCHANT_ID, CLOVER_API_TOKEN);
   } else {
-    if (process.env.NODE_ENV === "production" && !process.env.REWARDS_ALLOW_MOCKS) {
+    if (!mocksAllowed()) {
       throw new Error("Clover: CLOVER_MERCHANT_ID and CLOVER_API_TOKEN are required in production");
     }
     client = new MockClover();

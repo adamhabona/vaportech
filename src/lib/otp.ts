@@ -1,4 +1,5 @@
 import "server-only";
+import { mocksAllowed, TEST_OTP_CODE } from "@/lib/test-mode";
 
 /**
  * One-time login codes via Twilio Verify. The SMS body is Twilio's standard
@@ -8,7 +9,7 @@ import "server-only";
  * Without TWILIO_* env in development, code 123456 is accepted and logged.
  */
 
-const DEV_CODE = "123456";
+const DEV_CODE = TEST_OTP_CODE;
 
 const attempts = new Map<string, number[]>();
 const WINDOW_MS = 60 * 60 * 1000;
@@ -26,7 +27,7 @@ function rateLimited(phone: string) {
 function twilio() {
   const { TWILIO_ACCOUNT_SID: sid, TWILIO_AUTH_TOKEN: tokenValue, TWILIO_VERIFY_SERVICE_SID: service } = process.env;
   if (sid && tokenValue && service) return { sid, token: tokenValue, service };
-  if (process.env.NODE_ENV === "production" && !process.env.REWARDS_ALLOW_MOCKS) {
+  if (!mocksAllowed()) {
     throw new Error("TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN and TWILIO_VERIFY_SERVICE_SID are required in production");
   }
   return null;
