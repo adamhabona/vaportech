@@ -14,6 +14,9 @@ const STATIC_ROUTES = [
   "/brands",
   "/locations",
   "/blog",
+  "/rewards",
+  "/rewards/leaderboard",
+  "/rewards/rules",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
